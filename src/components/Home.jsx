@@ -53,11 +53,11 @@ function Home() {
   useEffect(() => {}, []);
 
   const handleRefresh = async () => {
-    console.log('Refresh triggered');
+    // console.log('Refresh triggered');
     setLoading(true);
     await new Promise((resolve) => {
       setTimeout(() => {
-        console.log('Updating data');
+        // console.log('Updating data');
         const updatedChannels = channels.map(group => ({
           ...group,
           items: group.items.map(item => ({
