@@ -1,0 +1,33 @@
+.pull-to-refresh {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 60px;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .pulling-content,
+  .release-content,
+  .refreshing-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 60px;
+    font-size: 16px;
+  }
+  
+  .loading-icon {
+    color: teal;
+    font-size: 2rem;
+    animation: animate 2s infinite;
+  }
+  
+  @keyframes animate {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(720deg);
+    }
+  }
+  
